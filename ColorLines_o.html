@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Color Lines By Yu-YiLin</title>
+    <meta charset="utf-8" />
+    <!--Add jQuery Mobile Files-->
+    <link rel="stylesheet" href="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css" />
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+    <script type="text/javascript">
+        var COLS = 9;
+        var ROWS = 9;
+        var BALLS = 7;
+    </script>
+
+    <!--Game File-->
+    <script type="text/javascript" src="CL_yy_js/CL_yy_FL_JavaScript_o.js"></script>  <!--Front Load File-->
+    <link type="text/css" href="CL_yy_css/CL_yy_StyleSheet_o.css" rel="stylesheet" />
+</head>
+<body>
+    <div data-role="page" id="homePage" data-theme="b">
+        <div style="overflow: hidden;" data-role="header">
+            <h1>Color Lines Game</h1>
+            <a class="ui-btn-right" href="#infoPage" data-icon="info">Info</a>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#homePage" data-icon="home">Home</a></li>
+                    <li><a href="#helpPage" data-icon="star">Help</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /header -->
+
+        <div id="contents">
+            <div id="forecast">
+                <div>Next Ball : </div>
+                <div id="ball-1" class="ball0">&#160;</div>
+                <div id="ball-2" class="ball0">&#160;</div>
+                <div id="ball-3" class="ball0">&#160;</div>
+            </div><!-- forecast -->
+            <div id="reloaddiv"><a href="javascript:window.location.reload()" data-role="button" data-inline="true">Regenerate Game</a></div>
+            <!--<div id="record-holder">Record: <strong id="record">0</strong></div>-->
+            <!--<div id="score-holder">Your Score: <strong id="score">0</strong></div>-->
+            <div id="bg" align="center">
+                <!-- Initial content from JavaScript init_tab() function -->
+                <div id="selection">&#160;</div>
+                <div id="table_board"></div>
+            </div><!-- bg -->
+        </div><!-- contents -->
+    </div>
+
+    <div data-role="page" id="helpPage" data-theme="c">
+        <div style="overflow: hidden;" data-role="header">
+            <h1>Color Lines Game</h1>
+            <a class="ui-btn-right" href="#infoPage" data-icon="info">Info</a>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#homePage" data-icon="home">Home</a></li>
+                    <li><a href="#helpPage" data-icon="star">Help</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /header -->
+
+        <div id="description">
+            <div align="center"><h2>Color Lines Game - Help</h2></div>
+            <div id="info" align="center"></div><!--Initial content from JavaScript init_info() function-->
+        </div><!-- description -->
+    </div><!-- helpPage -->
+
+    <div data-role="page" id="infoPage" data-theme="c">
+        <div style="overflow: hidden;" data-role="header">
+            <h1>Color Lines Game</h1>
+            <a class="ui-btn-right" href="#infoPage" data-icon="info">Info</a>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#homePage" data-icon="home">Home</a></li>
+                    <li><a href="#helpPage" data-icon="star">Help</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /header -->
+
+        <div align="center">
+            <h2>About</h2>
+            <p>作者：林侑億 Yu-Yi Lin</p>
+        </div><!-- description -->
+    </div><!-- infoPage -->
+
+    <!--Game File-->
+    <script type="text/javascript" src="CL_yy_js/CL_yy_BL_JavaScript_o.js"></script>  <!--Rear Load File-->
+</body>
+</html>

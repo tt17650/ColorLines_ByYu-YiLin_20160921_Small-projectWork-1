@@ -1,0 +1,142 @@
+﻿#contents {
+    /*background-color: #FFAFFE;*/ /*測試用標示區塊範圍*/
+    width: 600px;
+    height: 30px;
+    margin: auto;
+}
+#table_board {
+    /*background-color: #FFAFFE;*/ /*測試用標示區塊範圍*/
+    width: 380px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+table#board {
+    background:#808080;
+    /*background: #7590AE;*/
+    position: absolute;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+}
+
+    table#board tr {
+        height: 41px;
+    }
+
+    table#board td {
+        border: 1px solid #ffd800;
+        width: 41px;
+        padding: 0px;
+        margin: 0px;
+        /*background:url(../img/test.png) no-repeat;
+        background-position: center;*/  /*test*/
+    }
+#reloaddiv {
+	position: relative;
+	top: -50px;
+    left: 50%;
+	width: 180px;
+	height: 70px;
+}
+
+
+
+
+
+
+body {
+	font-family: Georgia, serif;
+	margin: 0;
+	padding: 0;
+}
+#bg {
+	position: relative;
+	top: -50px;
+	left: 50%;
+	width: 450px;
+	height: 450px;
+	margin: 0 0 0 -225px;
+	/*background: #FFF url(i/bg.png);*/
+}
+/*#bg div {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}*/
+.ball0 {
+	background: url(../img/set01/b0.png) no-repeat;
+}
+.ball1 {
+	background: url(../img/set01/b1.png) no-repeat;
+}
+.ball2 {
+	background: url(../img/set01/b2.png) no-repeat;
+}
+.ball3 {
+	background: url(../img/set01/b3.png) no-repeat;
+}
+.ball4 {
+	background: url(../img/set01/b4.png) no-repeat;
+}
+.ball5 {
+	background: url(../img/set01/b5.png) no-repeat;
+}
+.ball6 {
+	background: url(../img/set01/b6.png) no-repeat;
+}
+
+div#selection {
+	/*background: url(../img/set01/selection.png) no-repeat;*/
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	margin-left: -10px;
+	margin-top: -13px;
+	display: none;
+}
+#forecast {
+	position: relative;
+	top: 10px;
+	left: 35%;
+	width: 180px;
+	height: 70px;
+	margin-left: -90px;
+    background-color:#E0E0E0;
+	/*background: url(../img/set01/forecast.png);*/
+}
+#ball-1, #ball-2, #ball-3 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+    margin-top:10px;
+}
+#ball-1 {
+	top: 10px;
+	left: 10px;
+}
+#ball-2 {
+	top: 10px;
+	left: 65px;
+}
+#ball-3 {
+	top: 10px;
+	left: 120px;
+}
+#record-holder, #score-holder {
+	position: absolute;
+	top: 80px;
+	width: 200px;
+	line-height: 20px;
+	left: 50%;
+	margin-left: -100px;
+	color: #0026ff;  /* 前景色(文字的顏色) */
+	text-align: center;
+	font-size: medium;
+}
+#score-holder {
+	top: 110px;
+}
+#description {
+	color: #0026ff;  /* info區,前景色(文字的顏色) */
+	/*margin: 610px 10px 10px 10px;*/
+}
